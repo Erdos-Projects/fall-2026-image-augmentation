@@ -30,11 +30,9 @@ nDFSC10_g3_Pose.csv    nDFSC15_g3_Pose.csv    nDFSC30_g1_Pose.csv    nDFSC30_g2_
 ## 2. Labels (YOLO pose format)
 
 One text file per image (`<image name>.txt`), one line: `0 xc yc w h  xA yA 2  xV yV 2  xB yB 2`.
-
-- Keypoints: pixel coordinates ÷ 200, in the order tip A, vertex, tip B, each with visibility 2 which you do not have to include.
-- Tip order, counter-clockwise (reordered the tips raw coordinates).
-- Box: the keypoints' bounds ± 0.1, clipped to [0, 1]; `xc yc` is its center and `w h` its size. The box does not
-  change when the tips are swapped.
+Keypoints: pixel coordinates ÷ 200, in the order tip A, vertex, tip B (tips counter-clockwise, swapped where needed),
+  each followed by visibility 2, which you can leave out (then set `kpt_shape: [3, 2]` in the YAML).
+The box is the keypoints' bounds ± 0.1, clipped to [0, 1] (`xc yc` its center, `w h` its size).
 
 Check if needed: the vertex angle from your labels matches the CSV's `Angle` column, and the `annotated_angle` column of the
 shipped `Results/*/test_best/predictions.csv` for the test particles.
