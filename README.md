@@ -125,3 +125,7 @@ Data: [OSF, doi:10.17605/OSF.IO/BMXHF](https://doi.org/10.17605/OSF.IO/BMXHF).
 
 GNU General Public License v3 (`LICENSE`). The models are trained with Ultralytics YOLO26, which is licensed under
 AGPL-3.0.
+
+## Acknowledgments
+
+I would like to thank my advisor Dr. Ralf Bundschuh and group members for their feedback and help. Also, thanks to the Erdos Institute mentor (Lindsay Warrenburg and Steven Gubkin) for their support and guidance as well as Claude Code for organizing and improving this work. 
