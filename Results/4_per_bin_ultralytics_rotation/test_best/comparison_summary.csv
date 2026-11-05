@@ -1,0 +1,2 @@
+n_total,n_detected,detection_rate_pct,angle_mae_deg,angle_mae_detected_deg,angle_bias_deg
+489,489,100.0,3.448,3.448,0.888
